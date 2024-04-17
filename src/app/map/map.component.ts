@@ -49,7 +49,7 @@ export class MapComponent implements OnInit{
   ngOnInit(): void {
     
     try {
-          this.http.get<any>('http://localhost:1111/').subscribe((response)=>{
+          this.http.get<any>('https://mapfinder-backend.onrender.com/').subscribe((response)=>{
           this.data = response;
           this.search_Data=this.data;
           this.filteredData = this.data;
