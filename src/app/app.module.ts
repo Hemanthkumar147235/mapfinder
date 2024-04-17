@@ -15,13 +15,13 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { NgxPaginationModule } from 'ngx-pagination';
-import { DummyComponent } from './dummy/dummy.component';
+ 
 
 @NgModule({
   declarations: [
     AppComponent,
     MapComponent,
-    DummyComponent,
+     
     
   ],
   imports: [

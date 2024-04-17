@@ -184,6 +184,7 @@ export class MapComponent implements OnInit{
   }
 
   onPageChange(event: number): void {
+    console.log(typeof event);
     this.currentPage = event;
     this.addpagenum(this.currentPage);
    
