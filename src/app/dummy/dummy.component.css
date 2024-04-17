@@ -1,0 +1,597 @@
+@media only screen and (min-width:1024px ){
+   
+    .detial_outlayerh1 h1{
+      font-family: Roboto;
+          padding-left: 70px; 
+          padding-bottom: 20px;
+          font-size: 35px;
+          font-weight: 800;
+          line-height: 37.5px;
+          text-align: left;
+          
+        
+     }
+     .country_flag{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: start;
+      align-items: flex-start; 
+  }
+  .header h1{
+    
+    font-family: Roboto;
+     font-weight: 900; 
+     font-size: 26px;
+     padding-left:30px;
+     padding-top: 10px;
+    font-family: Roboto;
+     font-weight: 900; font-size: 26px
+  }
+  .nowrap p{
+    margin-bottom: 20px; white-space: nowrap;
+  }
+  .nowrap_phase2 p{
+   /* margin-bottom: 20px;margin-left: 90px;white-space: nowrap; */
+   display: flex;
+   justify-content: start;
+   align-items: center;
+  }
+  .description{
+    padding-top: 30px;
+    padding-left: 10%;
+  }
+  .mat-mdc-card-content:last-child { 
+    padding: 0;
+  }
+  .country_flag_outlet{
+    margin-left: 90px;
+    margin-right: 30px;
+  }
+  .card-wrapper { 
+    display: inline-block;
+    border-radius: 35px;
+    margin-top: 50px;
+    margin-bottom: 30px; 
+    margin-right: 59px;
+    border: 0;
+     
+  }
+  .example-card {
+    border-radius: 5px ;
+    width: 290px;
+    height: 360px;
+  
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.15);
+  }
+  .country_flag img {
+    margin: 0; 
+    padding: 0; 
+    width: 100%;
+    height: 180px;  
+    object-fit: cover;
+    border-radius: 5px 5px 0 0; 
+  }
+  .header{
+   padding-left: 70px;
+   box-shadow: 0px 3px 3px 0px #00000026;
+  height: 70px;
+    }
+  .search_bar{ 
+  padding-top: 30px;
+    padding-left: 90px;
+    display: flex;
+    justify-content: start;
+    border: none;
+  }
+  .search_bar_1{
+    padding: 2%;
+    padding-top: 10px;
+    padding-left: 40px;
+    display: flex;
+    justify-content: start;
+    border: none;
+    box-shadow: 0px 0px 15px 0px #00000026;
+  }
+  .xx{
+     width: 420px;
+     font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.41px;
+  text-align: left;
+  height: 35px;
+  border: none; 
+    outline: none;
+  }
+  .row{
+    margin-right: 0;
+   margin-top: 1rem;
+  }
+    .no-border{
+      display: flex ;
+      justify-content: center;
+      padding-top: 15px;
+      padding-right: 10px;
+      border: none;
+      font-family: Roboto;
+      background-color: transparent;
+      font-size: 18px;
+      font-weight: 400;
+    }
+    .select_option{
+      border: 0;
+      width: 220px;  
+    height: 60px; 
+    padding-left: 20px;
+    box-shadow: 0px 0px 15px 0px #00000026;
+    }
+   
+    .custom-select {
+      
+     padding-top: 30px;
+      padding-right: 70px;
+      display: flex;
+      justify-content: end;
+      align-items: center;  
+    }
+   .detial_img img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 605px;
+    height: 460px;
+    top: 280px;
+    left: 80px;
+    gap: 0px;
+    opacity: 0px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .black-text{
+      color: black;
+      font-weight: 500;
+      font-family: Roboto;
+  font-size: 14px;
+  line-height: 16.41px;
+  text-align: left;
+    }
+    .grey-text{
+      padding-left: 5px;
+      color: grey;
+      font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.41px;
+  text-align: left;
+    }
+    .back_btn{
+      width: 136px;
+  height: 40px;
+  top: 160px;
+  left: 80px;
+  gap: 0px;
+  opacity: 0px;
+      font-size:20px ;
+      margin-left: 82px;
+      margin-top: 80px;
+    }
+    .img_outlayer{
+      margin-top: 60px;
+      margin-left: 70px;
+      padding-bottom: 100px;
+    }
+    .detial_outlayer{
+      
+      margin-top: 50px;
+      margin-left: 71px;
+    }
+    .detial_outlayer .col {
+      padding-left: 70px; 
+      width: 200px;/* Adjust the padding as needed */
+    }
+    .nowrap {
+      white-space: nowrap;
+    }
+  }
+  /* <--------------------------********************--------------------> */
+  @media only screen and (min-width:768px) and (max-width:1023px){
+    .detial_outlayerh1 h1{
+      font-family: Roboto;
+          padding-left: 70px; 
+          padding-bottom: 20px;
+          font-size: 35px;
+          font-weight: 800;
+          line-height: 37.5px;
+          text-align: left;
+          
+        
+     }
+     .nowrap p{
+      margin-bottom: 20px; white-space: nowrap;
+    }
+    .nowrap_phase2 p{
+     margin-bottom: 20px;margin-left: 90px;white-space: nowrap;
+    }
+    .header h1{
+    
+      font-family: Roboto;
+       font-weight: 900; 
+       font-size: 26px;
+       padding-left:30px;
+       padding-top: 10px;
+      font-family: Roboto;
+       font-weight: 900; font-size: 26px
+    }
+    .country_flag{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;     
+  }
+  .nowrap p{
+    margin-bottom: 20px; white-space: nowrap;
+  }
+  .nowrap_phase2 p{
+   margin-bottom: 20px;margin-left: 90px;white-space: nowrap;
+  }
+  .description{
+   padding-top: 30px;
+   padding-left: 10%;
+  }
+  .mat-mdc-card-content:last-child { 
+   padding: 0;
+  }
+  .country_flag_outlet{
+   margin-left: 90px;
+   margin-right: 30px;
+  }
+  .card-wrapper { 
+   border-radius: 35px;
+   margin-top: 50px;
+   margin-bottom: 30px; 
+   margin-right: 40px;
+   border: 0;
+  }
+  .example-card {
+   border-radius: 5px ;
+   width: 290px;
+   height: 360px;
+   box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.15);
+  }
+  .country_flag img {
+   margin: 0; 
+   padding: 0; 
+   width: 100%;
+   height: 180px;  
+   object-fit: cover;
+   border-radius: 5px 5px 0 0; 
+  }
+  .header{
+  padding-left: 70px;
+  box-shadow: 0px 3px 3px 0px #00000026;
+  height: 70px;
+   }
+  .search_bar{ 
+  padding-top: 30px;
+   padding-left: 90px;
+   display: flex;
+   justify-content: start;
+   border: none;
+  }
+  .search_bar_1{
+   padding: 2%;
+   padding-top: 10px;
+   padding-left: 40px;
+   display: flex;
+   justify-content: start;
+   border: none;
+   box-shadow: 0px 0px 15px 0px #00000026;
+  }
+  .xx{
+    width: 320px;
+    font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.41px;
+  text-align: left;
+  height: 35px;
+  border: none; 
+   outline: none;
+  }
+  .row{
+   margin-right: 0;
+  margin-top: 1rem;
+  }
+   .no-border{
+     display: flex ;
+     justify-content: center;
+     padding-top: 15px;
+     padding-right: 10px;
+     border: none;
+     font-family: Roboto;
+     background-color: transparent;
+     font-size: 18px;
+     font-weight: 400;
+   }
+   .select_option{
+     border: 0;
+     width: 220px;  
+   height: 60px; 
+   padding-left: 20px;
+   box-shadow: 0px 0px 15px 0px #00000026;
+   }
+  
+   .custom-select {
+     
+    padding-top: 30px;
+     padding-left: 100px;
+     display: flex;
+     justify-content: start;
+     align-items: center; 
+   }
+  .detial_img img{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 605px;
+   height: 460px;
+   top: 280px;
+   left: 80px;
+   gap: 0px;
+   opacity: 0px;
+   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+   }
+   .black-text{
+     color: black;
+     font-weight: 500;
+     font-family: Roboto;
+  font-size: 14px;
+  line-height: 16.41px;
+  text-align: left;
+   }
+   .grey-text{
+    padding-left: 5px;
+     color: grey;
+     font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.41px;
+  text-align: left;
+   }
+   .back_btn{
+     width: 136px;
+  height: 40px;
+  top: 160px;
+  left: 80px;
+  gap: 0px;
+  opacity: 0px;
+     font-size:20px ;
+     margin-left: 82px;
+     margin-top: 80px;
+   }
+   .img_outlayer{
+     margin-top: 60px;
+     margin-left: 70px;
+     padding-bottom: 100px;
+   }
+   .detial_outlayer{
+     
+     margin-top: 50px;
+     margin-left: 71px;
+   }
+   .detial_outlayer .col {
+     padding-left: 70px; 
+     width: 200px;/* Adjust the padding as needed */
+   }
+   .nowrap {
+     white-space: nowrap;
+   }
+  }
+  /* ************************** */
+  /* @media only screen and (min-width:1200px) and (max-width:1400px){
+    .detial_outlayerh1 h1{
+      font-family: Roboto;
+          padding-left: 70px; 
+          padding-bottom: 20px;
+          font-size: 35px;
+          font-weight: 800;
+          line-height: 37.5px;
+          text-align: left;
+          
+        
+     }
+     .header h1{
+    
+      font-family: Roboto;
+       font-weight: 900; 
+       font-size: 26px;
+       padding-left:30px;
+       padding-top: 10px;
+      font-family: Roboto;
+       font-weight: 900; font-size: 26px
+    }
+   .nowrap p{
+      margin-bottom: 20px; white-space: nowrap;
+    }
+    .nowrap_phase2 p{
+     margin-bottom: 20px;white-space: nowrap;
+    }
+  
+  } */
+  /* <--*************************--> */
+  @media only screen and (min-width:425px) and (max-width:767px){
+    
+    .nowrap p{
+      margin-bottom: 20px; white-space: nowrap;
+    }
+    .nowrap_phase2 p{
+     margin-bottom: 20px;white-space: nowrap;
+    }.country_flag{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;   
+  }
+  .description{
+   padding-top: 30px;
+   padding-left: 10%;
+  }
+  .mat-mdc-card-content:last-child { 
+   padding: 0;
+  }
+  .header h1{
+    padding-top: 10px;
+    font-weight: 900;
+    font-size: 17px;
+  }
+  .country_flag_outlet{
+   margin-left: 60px;
+   margin-right: 30px;
+  }
+  .card-wrapper { 
+   border-radius: 35px;
+   margin-top: 50px;
+   margin-bottom: 30px; 
+   margin-right: 40px;
+   border: 0;
+  }
+  .example-card {
+   border-radius: 5px ;
+   width: 290px;
+   height: 360px;
+   box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.15);
+  }
+  .country_flag img {
+   margin: 0; 
+   padding: 0; 
+   width: 100%;
+   height: 180px;  
+   object-fit: cover;
+   border-radius: 5px 5px 0 0; 
+  }
+  .header{
+  padding-left: 20px;
+  box-shadow: 0px 3px 3px 0px #00000026;
+  height: 70px;
+   }
+  .search_bar{ 
+  padding-top: 30px;
+   padding-left: 40px;
+   display: flex;
+   justify-content: start;
+   border: none;
+  }
+  .search_bar_1{
+   padding: 2%;
+   padding-top: 10px;
+   padding-left: 40px;
+   display: flex;
+   justify-content: start;
+   border: none;
+   box-shadow: 0px 0px 15px 0px #00000026;
+  }
+  .xx{
+    width: 220px;
+    font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.41px;
+  text-align: left;
+  height: 35px;
+  border: none; 
+   outline: none;
+  }
+  .row{
+   margin-right: 0;
+  margin-top: 1rem;
+  }
+   .no-border{
+     display: flex ;
+     justify-content: center;
+     padding-top: 15px;
+     padding-right: 10px;
+     border: none;
+     font-family: Roboto;
+     background-color: transparent;
+     font-size: 18px;
+     font-weight: 400;
+   }
+   .select_option{
+     border: 0;
+     width: 220px;  
+   height: 60px; 
+   padding-left: 20px;
+   box-shadow: 0px 0px 15px 0px #00000026;
+   }
+  
+   .custom-select {
+     
+    padding-top: 30px;
+     padding-left: 50px;
+     display: flex;
+     justify-content: start;
+     align-items: center;  
+   }
+  .detial_img img{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 370px;
+   height: 268px;
+   top: 280px;
+   left: 80px;
+   gap: 0px;
+   opacity: 0px;
+   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+   }
+   .black-text{
+     color: black;
+     font-weight: 500;
+     font-family: Roboto;
+  font-size: 14px;
+  line-height: 16.41px;
+  text-align: left;
+   }
+   .grey-text{
+    padding-left: 5px;
+     color: grey;
+     font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.41px;
+  text-align: left;
+   }
+   .back_btn{
+     width: 126px;
+  height: 40px;
+  top: 160px;
+  left: 80px;
+  gap: 0px;
+  opacity: 0px;
+     font-size:20px ;
+     margin-left: 40px;
+     margin-top: 50px;
+   }
+   .img_outlayer{
+     margin-top: 60px;
+     margin-left: 20px;
+     padding-bottom: 10px;
+   }
+   .detial_outlayerh1 h1{
+    font-family: Roboto;
+        padding-left: 40px; 
+        padding-bottom: 20px;
+        font-size: 35px;
+        font-weight: 800;
+        line-height: 37.5px;
+        text-align: left;
+        
+      
+   }
+   .detial_outlayer .col {
+     padding-left: 40px; 
+     width: 200px; 
+   }
+   .nowrap {
+     white-space: nowrap;
+   }
+  }

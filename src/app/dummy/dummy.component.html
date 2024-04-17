@@ -1,0 +1,288 @@
+
+<div class="row header">
+  <div class="col d-flex justify-content-start headerh1 "  ><h1 >Where in the world?</h1></div>
+  <div class="col d-flex justify-content-end  " style="width:80px; height:80px ;padding-right:60px;">
+ 
+    
+    <button class="no-border"> 
+      <div style="margin-right: 13px;">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14.4608 9.4609C13.8403 9.64898 13.1819 9.7501 12.5 9.7501C8.77208 9.7501 5.75 6.72802 5.75 3.0001C5.75 2.31816 5.85113 1.65983 6.0392 1.03931C3.26756 1.87937 1.25 4.45412 1.25 7.5001C1.25 11.228 4.27208 14.2501 8 14.2501C11.046 14.2501 13.6207 12.2325 14.4608 9.4609Z" stroke="#121214" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg >
+    </div> Dark Mode</button>
+  </div>
+  
+  
+<!-- <div *ngIf="changeview==='frontpage'">
+
+  <div class="row">
+    
+    <div class=" container col ">
+      <div class="search_bar">
+        <div class=" search_bar_1 " >
+          <div style="margin-top: 6px;margin-right: 15px;">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" >
+            <path d="M8.33333 14.1667C11.555 14.1667 14.1667 11.555 14.1667 8.33333C14.1667 5.11167 11.555 2.5 8.33333 2.5C5.11167 2.5 2.5 5.11167 2.5 8.33333C2.5 11.555 5.11167 14.1667 8.33333 14.1667Z" stroke="black" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12.5 12.5L17.5 17.5" stroke="black" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg></div>
+            
+          <input class="xx"  type="text" [(ngModel)]="search_text" (input)="showParticular()" placeholder="Search  for a country...">
+        </div> 
+      </div>
+    </div>
+     
+    
+
+    <div class=" col custom-select " style="width: 200px;"  >
+      
+      
+      <select [(ngModel)]="selectedCountry"  class="select_option" >
+        <option   value="Please Choose" disabled selected hidden>Filter by Region</option>
+        <option    value="Africa" >Africa</option>
+        <option    value="America"  >America</option>
+        <option   value="Asia"  >Asia</option>
+        <option    value="Europe">Europe</option>
+        <option    value="Oceania">Oceania</option>
+      </select>
+    
+    </div>    
+  </div> 
+      <div class=" country_flag_outlet">
+        <div class=" country_flag"   >
+          <div *ngFor="let item of search_Data" (click)="selectcard(item)">
+              <div *ngIf="isCapitalMatch(item.country.name.common)">
+                  <div *ngIf="showparticulardata==='capital'">
+                      <div class="card-wrapper">
+                        <mat-card  class="example-card ">
+                          <mat-card-content>
+                              <img src={{item.country.flags.svg}} alt={{item.country.flags.alt}}>
+                              <div class="container description">
+                                <p style="font-family: Roboto;
+                                font-size: 19px;
+                                font-weight: 700;
+                                line-height: 21.09px;
+                                text-align: left;
+                                padding-bottom:10px ;
+                                ">{{item.country.name.common}}</p>
+                              
+                                <p style="margin-bottom: 5px;"><span class="black-text">Population:</span><span class="grey-text">{{item.country.population}}</span></p>
+                                <p style="margin-bottom: 5px;"><span class="black-text">Region:</span><span class="grey-text">{{item.country.region}}</span></p>
+                                <p style="margin-bottom: 35px;"><span class="black-text">Capital:</span><span class="grey-text">{{item.country.capital}}</span></p>
+                              </div>
+                              
+                          </mat-card-content>
+                        </mat-card>
+                      </div>
+                  </div>  
+                </div>
+            </div>    
+      </div>
+    
+      </div>
+      
+  
+    
+    
+    
+
+
+      <div class=" country_flag_outlet">
+      <div *ngIf="showparticulardata==='all'" >
+        <div class=" country_flag"   >
+             
+              <div *ngFor="let data of data | paginate: { itemsPerPage: itemsPerPage, currentPage: currentPage, totalItems: filteredData.length } "  (click)="selectcard(data)">
+             
+              <div *ngIf="selectedCountry === 'Please Choose'">
+                      
+                <div   class="card-wrapper ">
+                  
+                  <mat-card  class="example-card ">
+                    <mat-card-content>
+                        <img src={{data.country.flags.svg}} alt={{data.country.flags.alt}}>
+                        <div class="container description">
+                          <p style="font-family: Roboto;
+                          font-size: 19px;
+                          font-weight: 700;
+                          line-height: 21.09px;
+                          text-align: left;
+                          padding-bottom:10px ;
+                          ">{{data.country.name.common}}</p>
+                        
+                          <p style="margin-bottom: 5px;"><span class="black-text">Population:</span><span class="grey-text">{{data.country.population}}</span></p>
+                          <p style="margin-bottom: 5px;"><span class="black-text">Region:</span><span class="grey-text">{{data.country.region}}</span></p>
+                          <p style="margin-bottom: 35px;"><span class="black-text">Capital:</span><span class="grey-text">{{data.country.capital}}</span></p>
+                        </div>
+                        
+                    </mat-card-content>
+                    
+                  </mat-card>
+                </div> 
+              </div>
+                     
+              
+            </div>
+            <div *ngFor="let asia of (filteredAsiaData | slice:((currentPage - 1) * itemsPerPage):((currentPage - 1) * itemsPerPage + itemsPerPage)) | paginate: { itemsPerPage: itemsPerPage, currentPage: currentPage, totalItems: filteredAsiaData.length } "  (click)="selectcard(asia)">
+               
+              <div *ngIf="selectedCountry === 'Asia'"  >
+                <div  class="card-wrapper ">
+                  <mat-card  class="example-card ">
+                    <mat-card-content>
+                        <img src={{asia.country.flags.svg}} alt={{asia.country.flags.alt}}>
+                        <div class="container description">
+                          <p style="font-family: Roboto;
+                          font-size: 19px;
+                          font-weight: 700;
+                          line-height: 21.09px;
+                          text-align: left; 
+                          padding-bottom:10px ;
+                          ">{{asia.country.name.common}}</p>
+                        
+                          <p style="margin-bottom: 5px;"><span class="black-text">Population:</span><span class="grey-text">{{asia.country.population}}</span></p>
+                          <p style="margin-bottom: 5px;"><span class="black-text">Region:</span><span class="grey-text">{{asia.country.region}}</span></p>
+                          <p style="margin-bottom: 35px;"><span class="black-text">Capital:</span><span class="grey-text">{{asia.country.capital}}</span></p>
+                        </div>
+                        
+                    </mat-card-content>
+                  </mat-card>
+                </div> 
+              </div>  
+           
+            </div>
+            
+            <div *ngFor="let africa of (filteredAfricaData | slice:((currentPage - 1) * itemsPerPage):((currentPage - 1) * itemsPerPage + itemsPerPage)) | paginate: { itemsPerPage: itemsPerPage, currentPage: currentPage, totalItems: filteredAsiaData.length } "  (click)="selectcard(africa)">
+               
+              <div *ngIf="selectedCountry === 'Africa'"  >
+                <div  class="card-wrapper ">
+                  <mat-card  class="example-card ">
+                    <mat-card-content>
+                        <img src={{africa.country.flags.svg}} alt={{africa.country.flags.alt}}>
+                        <div class="container description">
+                          <p style="font-family: Roboto;
+                          font-size: 19px;
+                          font-weight: 700;
+                          line-height: 21.09px;
+                          text-align: left; 
+                          padding-bottom:10px ;
+                          ">{{africa.country.name.common}}</p>
+                        
+                          <p style="margin-bottom: 5px;"><span class="black-text">Population:</span><span class="grey-text">{{africa.country.population}}</span></p>
+                          <p style="margin-bottom: 5px;"><span class="black-text">Region:</span><span class="grey-text">{{africa.country.region}}</span></p>
+                          <p style="margin-bottom: 35px;"><span class="black-text">Capital:</span><span class="grey-text">{{africa.country.capital}}</span></p>
+                        </div>
+                        
+                    </mat-card-content>
+                  </mat-card>
+                </div> 
+              </div>  
+           
+            </div>
+        
+            <div *ngFor="let europe of (filteredEuropeData | slice:((currentPage - 1) * itemsPerPage):((currentPage - 1) * itemsPerPage + itemsPerPage)) | paginate: { itemsPerPage: itemsPerPage, currentPage: currentPage, totalItems: filteredAsiaData.length } "  (click)="selectcard(europe)">
+               
+              <div *ngIf="selectedCountry === 'Europe'"  >
+                <div  class="card-wrapper ">
+                  <mat-card  class="example-card ">
+                    <mat-card-content>
+                        <img src={{europe.country.flags.svg}} alt={{europe.country.flags.alt}}>
+                        <div class="container description">
+                          <p style="font-family: Roboto;
+                          font-size: 19px;
+                          font-weight: 700;
+                          line-height: 21.09px;
+                          text-align: left; 
+                          padding-bottom:10px ;
+                          ">{{europe.country.name.common}}</p>
+                        
+                          <p style="margin-bottom: 5px;"><span class="black-text">Population:</span><span class="grey-text">{{europe.country.population}}</span></p>
+                          <p style="margin-bottom: 5px;"><span class="black-text">Region:</span><span class="grey-text">{{europe.country.region}}</span></p>
+                          <p style="margin-bottom: 35px;"><span class="black-text">Capital:</span><span class="grey-text">{{europe.country.capital}}</span></p>
+                        </div>
+                        
+                    </mat-card-content>
+                  </mat-card>
+                </div> 
+              </div>  
+           
+            </div>
+           
+            <div *ngFor="let america of (filteredAmericaData | slice:((currentPage - 1) * itemsPerPage):((currentPage - 1) * itemsPerPage + itemsPerPage)) | paginate: { itemsPerPage: itemsPerPage, currentPage: currentPage, totalItems: filteredAsiaData.length } "  (click)="selectcard(america)">
+               
+              <div *ngIf="selectedCountry === 'America'"  >
+                <div  class="card-wrapper ">
+                  <mat-card  class="example-card ">
+                    <mat-card-content>
+                        <img src={{america.country.flags.svg}} alt={{america.country.flags.alt}}>
+                        <div class="container description">
+                          <p style="font-family: Roboto;
+                          font-size: 19px;
+                          font-weight: 700;
+                          line-height: 21.09px;
+                          text-align: left; 
+                          padding-bottom:10px ;
+                          ">{{america.country.name.common}}</p>
+                        
+                          <p style="margin-bottom: 5px;"><span class="black-text">Population:</span><span class="grey-text">{{america.country.population}}</span></p>
+                          <p style="margin-bottom: 5px;"><span class="black-text">Region:</span><span class="grey-text">{{america.country.region}}</span></p>
+                          <p style="margin-bottom: 35px;"><span class="black-text">Capital:</span><span class="grey-text">{{america.country.capital}}</span></p>
+                        </div>
+                        
+                    </mat-card-content>
+                  </mat-card>
+                </div> 
+              </div>  
+           
+            </div>
+             
+            <div *ngFor="let oceania of (filteredOceaniaData | slice:((currentPage - 1) * itemsPerPage):((currentPage - 1) * itemsPerPage + itemsPerPage)) | paginate: { itemsPerPage: itemsPerPage, currentPage: currentPage, totalItems: filteredAsiaData.length } "  (click)="selectcard(oceania)">
+               
+              <div *ngIf="selectedCountry === 'Oceania'"  >
+                <div  class="card-wrapper ">
+                  <mat-card  class="example-card ">
+                    <mat-card-content>
+                        <img src={{oceania.country.flags.svg}} alt={{oceania.country.flags.alt}}>
+                        <div class="container description">
+                          <p style="font-family: Roboto;
+                          font-size: 19px;
+                          font-weight: 700;
+                          line-height: 21.09px;
+                          text-align: left; 
+                          padding-bottom:10px ;
+                          ">{{oceania.country.name.common}}</p>
+                        
+                          <p style="margin-bottom: 5px;"><span class="black-text">Population:</span><span class="grey-text">{{oceania.country.population}}</span></p>
+                          <p style="margin-bottom: 5px;"><span class="black-text">Region:</span><span class="grey-text">{{oceania.country.region}}</span></p>
+                          <p style="margin-bottom: 35px;"><span class="black-text">Capital:</span><span class="grey-text">{{oceania.country.capital}}</span></p>
+                        </div>
+                        
+                    </mat-card-content>
+                  </mat-card>
+                </div> 
+              </div>  
+           
+            </div>
+         
+        
+        
+        
+        
+      </div>
+    </div>
+    </div>
+    <div class="col d-flex justify-content-center "  >
+      <div>
+        <pagination-controls (pageChange)="onPageChange($event)"></pagination-controls>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center  ">
+        
+      <label for="itemsPerPageSelect">Items per page:</label>
+      <select id="itemsPerPageSelect" [(ngModel)]="itemsPerPage" (change)="onPageSizeChange($event)">
+        <option *ngFor="let option of pageSizeOptions" [value]="option">{{option}}</option>
+      </select>
+     
+  </div>
+
+
+    <div *ngIf="showparticulardata==='not_found'" class="d-flex justify-content-center pt-5" style="font-size: xx-large;">
+      <p>****NOT FOUND****</p></div>
+</div> -->
